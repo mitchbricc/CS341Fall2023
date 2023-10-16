@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RunningApp.ContentPages.RunningHistory"
+             Title="RunningHistory">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Label HorizontalTextAlignment="Start" Text="Running History" FontSize="Large"/>
+            <HorizontalStackLayout>
+                <Label Text="run in location Distance Time" FontSize="Large"/>
+                <Button Text="details" Clicked="Details_Clicked"/>
+            </HorizontalStackLayout>
+                <!--place holder for data to be displayed-->
+                <!--<CollectionView x:Name="CV" ItemsSource="{Binding Airports}" SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Airport">
+                        <Grid RowDefinitions="*" ColumnDefinitions="10*,2*,2*, 2*, 2*">
+                            <Label Grid.Column="0" Text="{Binding Id}" VerticalTextAlignment="Center"/>
+                            <Label Grid.Column="1" Text="{Binding City}" VerticalTextAlignment="Center"/>
+                            <Label Grid.Column="2" Text="{Binding DateVisted}" VerticalTextAlignment="Center"/>
+                            <Label Grid.Column="3" Text="{Binding Rating}" VerticalTextAlignment="Center" />
+                            --><!--<Button Grid.Column="4" BackgroundColor="Transparent"  Clicked="DeleteMovie_Clicked"  ImageSource="trash.png" />--><!--
+                        </Grid>
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

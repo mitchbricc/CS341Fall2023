@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RunningApp;assembly=RunningApp"
+             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="RunningApp.AppTabbedPage">
+    <NavigationPage Title="One" IconImageSource="{StaticResource TabOne}">
+        <x:Arguments>
+            <local:MainPage Title="One" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Running History" IconImageSource="{StaticResource TabTwo}">
+        <x:Arguments>
+            <local:ContentPages.RunningHistory Title="Running History" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Shop" IconImageSource="{StaticResource TabThree}">
+        <x:Arguments>
+            <local:ContentPages.Shop Title="Shop" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Social" IconImageSource="{StaticResource TabFour}">
+        <x:Arguments>
+            <local:ContentPages.SocialFeed Title="Social Feed" />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

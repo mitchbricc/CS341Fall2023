@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RunningApp.ContentPages.Shop"
+             Title="Shop">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+            Text="Avatar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="running_stick_figure.png" />
+        <Label Text="Items" FontSize="Large"/>
+        <ScrollView>
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*">
+                <VerticalStackLayout Grid.Column="0">
+                    <Label Text="Item Title"/>
+                    <Label Text="cost"/>
+                    <Image Source="feathered_hat.png" />
+                    <Button Text="Buy" Clicked="Buy_Clicked"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Item Title"/>
+                    <Label Text="cost"/>
+                    <Image Source="feathered_hat.png" />
+                    <Button Text="Buy" Clicked="Buy_Clicked"/>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

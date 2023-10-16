@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RunningApp.ContentPages.RunComparison"
+             Title="RunComparison">
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label 
+                    Text="your run"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                    <Label Text="average speed: "/>
+                    <Label Text="average pace: "/>
+                    <Label Text="graph time vs pace"/>
+                    <Label Text="graph time vs elevation"/>
+                    <Label Text="Elevation change: "/>
+                    <Label Text="average moving pace: "/>
+                    <Label Text="user note: "/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label 
+                    Text="their run"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                    <Label Text="average speed: "/>
+                    <Label Text="average pace: "/>
+                    <Label Text="graph time vs pace"/>
+                    <Label Text="graph time vs elevation"/>
+                    <Label Text="Elevation change: "/>
+                    <Label Text="average moving pace: "/>
+                    <Label Text="user note: "/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="difference" HorizontalTextAlignment="Center"/>
+                <Label Text="average difference speed: " HorizontalTextAlignment="Center"/>
+                <Label Text="average pace difference: " HorizontalTextAlignment="Center"/>
+                <Label Text="graph difference time vs pace" HorizontalTextAlignment="Center"/>
+                <Label Text="graph difference time vs elevation" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RunningApp.ContentPages.RunDetails"
+             Title="RunDetails">
+    <VerticalStackLayout>
+        <Label 
+            Text="Run Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="average speed: "/>
+        <Label Text="average pace: "/>
+        <Label Text="graph time vs pace"/>
+        <Label Text="graph time vs elevation"/>
+        <Label Text="Elevation change: "/>
+        <Label Text="average moving pace: "/>
+        <Label Text="user note: "/>
+        <Button Text="add note" Clicked="AddNote_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
