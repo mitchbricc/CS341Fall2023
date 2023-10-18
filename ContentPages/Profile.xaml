@@ -3,31 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RunningApp.ContentPages.Profile"
              Title="Profile">
-    <ScrollView>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+    <ScrollView HorizontalOptions="Center">
+        <StackLayout HorizontalOptions="Center">
             <Frame CornerRadius="100" BackgroundColor="LightGray" Padding="0" HorizontalOptions="Center" Margin="0,20">
                 <Image Source="Resources/Images/profile_image.png" WidthRequest="120" HeightRequest="120" Aspect="AspectFill" />
             </Frame>
 
-            <Label x:Name="ProfileNameLabel" Text="Profile Name" FontAttributes="Bold" FontSize="Large" Margin="0,20" />
+            <Label x:Name="ProfileNameLabel" Text="Profile Name" FontAttributes="Bold" FontSize="Large" Margin="0,20" HorizontalOptions="Center" />
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Change Name" VerticalOptions="Center" />
+                <Label Text="Change Name" VerticalOptions="Center" HorizontalOptions="Center" />
                 <Entry Placeholder="Full Name" x:Name="FullNameEntry" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Change Email" VerticalOptions="Center" />
+                <Label Text="Change Email" VerticalOptions="Center" HorizontalOptions="Center" />
                 <Entry Placeholder="Email Address" x:Name="EmailEntry" />
             </StackLayout>
         
             <StackLayout Orientation="Horizontal">
-                <Label Text="Push Notifications" VerticalOptions="Center" />
+                <Label Text="Push Notifications" VerticalOptions="Center" HorizontalOptions="Center" />
                 <Switch x:Name="PushNotificationSwitch" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Email Notifications" VerticalOptions="Center" />
+                <Label Text="Email Notifications" VerticalOptions="Center" HorizontalOptions="Center" />
                 <Switch x:Name="EmailNotificationSwitch" />
             </StackLayout>
 
