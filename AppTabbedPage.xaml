@@ -5,9 +5,9 @@
              xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
              android:TabbedPage.ToolbarPlacement="Bottom"
              x:Class="RunningApp.AppTabbedPage">
-    <NavigationPage Title="One" IconImageSource="{StaticResource TabOne}">
+    <NavigationPage Title="Route Creation" IconImageSource="{StaticResource TabOne}">
         <x:Arguments>
-            <local:MainPage Title="One" />
+            <local:MainPage Title="Route Creation" />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Running History" IconImageSource="{StaticResource TabTwo}">
@@ -23,6 +23,11 @@
     <NavigationPage Title="Social" IconImageSource="{StaticResource TabFour}">
         <x:Arguments>
             <local:ContentPages.SocialFeed Title="Social Feed" />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Map" IconImageSource="{StaticResource TabFive}">
+        <x:Arguments>
+            <local:ContentPages.MapView Title="Map"/>
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>

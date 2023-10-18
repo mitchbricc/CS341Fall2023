@@ -51,11 +51,15 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.96" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="AppTabbedPage.xaml.cs">
 	    <DependentUpon>AppTabbedPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ContentPages\GenerateRouteSettings.xaml.cs">
+	    <DependentUpon>GenerateRouteSettings.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="ContentPages\RunDetails.xaml.cs">
 	    <DependentUpon>RunDetails.xaml</DependentUpon>
@@ -76,6 +80,12 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="AppTabbedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ContentPages\MapView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ContentPages\GenerateRouteSettings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ContentPages\RunningHistory.xaml">
