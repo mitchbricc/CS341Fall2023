@@ -1,4 +1,6 @@
-﻿namespace RunningApp;
+﻿using RunningApp.ContentPages;
+
+namespace RunningApp;
 
 public partial class GenerateRoute : ContentPage
 {
@@ -10,7 +12,7 @@ public partial class GenerateRoute : ContentPage
 
     private void btnGenerateRoute_Clicked(object sender, EventArgs e)
     {
-
+		Navigation.PushAsync(new GenerateRouteSettings());
     }
 }
 

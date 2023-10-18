@@ -14,7 +14,7 @@
                 Source="rngmap.jpg"
                 HorizontalOptions="CenterAndExpand" />
 
-
+            
             <Button
                 x:Name="btnGenerateRoute"
                 Text="Generate Route"

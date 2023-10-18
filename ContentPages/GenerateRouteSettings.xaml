@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RunningApp.ContentPages.GenerateRouteSettings"
              Title="Generate Route Settings">
-    <VerticalStackLayout>
+    <FlexLayout>
         <Label 
             Text="Generate Route"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <Label HorizontalOptions="Start" VerticalOptions="End">asdfasdfasdf</Label>
+        <Switch HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Switch>
+    </FlexLayout>
 </ContentPage>
