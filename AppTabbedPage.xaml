@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RunningApp;assembly=RunningApp"
@@ -28,6 +28,11 @@
     <NavigationPage Title="Map" IconImageSource="{StaticResource TabFive}">
         <x:Arguments>
             <local:ContentPages.MapView Title="Map"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Profile" IconImageSource="{StaticResource TabSix}">
+        <x:Arguments>
+            <local:ContentPages.Profile Title="Profile"/>
         </x:Arguments>
     </NavigationPage>
 </TabbedPage>

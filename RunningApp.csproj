@@ -111,4 +111,10 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\profile_image.jpeg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\profile_image.jpeg" />
+	</ItemGroup>
 </Project>

@@ -3,10 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RunningApp.ContentPages.Profile"
              Title="Profile">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+            <Frame CornerRadius="100" BackgroundColor="LightGray" Padding="0" HorizontalOptions="Center" Margin="0,20">
+                <Image Source="Resources/Images/profile_image.png" WidthRequest="120" HeightRequest="120" Aspect="AspectFill" />
+            </Frame>
+
+            <Label x:Name="ProfileNameLabel" Text="Profile Name" FontAttributes="Bold" FontSize="Large" Margin="0,20" />
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Change Name" VerticalOptions="Center" />
+                <Entry Placeholder="Full Name" x:Name="FullNameEntry" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Change Email" VerticalOptions="Center" />
+                <Entry Placeholder="Email Address" x:Name="EmailEntry" />
+            </StackLayout>
+        
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Push Notifications" VerticalOptions="Center" />
+                <Switch x:Name="PushNotificationSwitch" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email Notifications" VerticalOptions="Center" />
+                <Switch x:Name="EmailNotificationSwitch" />
+            </StackLayout>
+
+            <Button Text="Save" Clicked="OnSaveClicked" HorizontalOptions="Center" Margin="0,20" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
