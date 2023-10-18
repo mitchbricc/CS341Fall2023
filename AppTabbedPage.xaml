@@ -7,7 +7,7 @@
              x:Class="RunningApp.AppTabbedPage">
     <NavigationPage Title="Route Creation" IconImageSource="{StaticResource TabOne}">
         <x:Arguments>
-            <local:MainPage Title="Route Creation" />
+            <local:GenerateRoute Title="Route Creation" />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Running History" IconImageSource="{StaticResource TabTwo}">

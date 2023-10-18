@@ -76,6 +76,9 @@
 	  <Compile Update="ContentPages\RunComparison.xaml.cs">
 	    <DependentUpon>RunComparison.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="GenerateRoute.xaml.cs">
+	    <DependentUpon>GenerateRoute.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>

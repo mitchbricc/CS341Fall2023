@@ -1,9 +1,9 @@
 ﻿namespace RunningApp;
 
-public partial class MainPage : ContentPage
+public partial class GenerateRoute : ContentPage
 {
 
-	public MainPage()
+	public GenerateRoute()
 	{
 		InitializeComponent();
 	}
