@@ -20,12 +20,13 @@
                    Grid.Row="1"
                    Grid.Column="0"
                    VerticalTextAlignment="Start"
-                   Text="Furthest Distance allowed from current location:"/>
+                   Text="Furthest Distance allowed from current location:(Miles)"/>
             
             <Entry x:Name="txtFurthestDistanceAllowed"
                    Grid.Column="1"
                    Grid.Row="1"
-                   VerticalOptions="Start"/>
+                   VerticalOptions="Start"
+                   Placeholder="4"/>
             
         </Grid>
     </ScrollView>
