@@ -3,12 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RunningApp.ContentPages.GenerateRouteSettings"
              Title="Generate Route Settings">
-    <FlexLayout>
-        <Label 
-            Text="Generate Route"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label HorizontalOptions="Start" VerticalOptions="End">asdfasdfasdf</Label>
-        <Switch HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Switch>
-    </FlexLayout>
+    <ScrollView>
+        <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+            <Label x:Name="lblGeneratedRoute"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Distanced Locked:"
+                   VerticalOptions="StartAndExpand"/>
+            
+            <Switch x:Name="swtchLockedDistance"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalOptions="Start"/>
+            
+            <Label x:Name="lblFurthestDistance"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Start"
+                   Text="Furthest Distance allowed from current location:"/>
+            
+            <Entry x:Name="txtFurthestDistanceAllowed"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   VerticalOptions="Start"/>
+            
+        </Grid>
+    </ScrollView>
 </ContentPage>

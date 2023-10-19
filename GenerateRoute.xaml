@@ -17,7 +17,7 @@
             
             <Button
                 x:Name="btnGenerateRoute"
-                Text="Generate Route"
+                Text="Generate Route Settings"
                 HorizontalOptions="Center"
                 Clicked="btnGenerateRoute_Clicked"/>
 
