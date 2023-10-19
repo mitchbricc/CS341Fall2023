@@ -20,6 +20,10 @@
                 Text="Generate Route Settings"
                 HorizontalOptions="Center"
                 Clicked="btnGenerateRoute_Clicked"/>
+            <Button
+                x:Name="btnMoveRoute"
+                Text="Move Route"
+                HorizontalOptions="Center"/>
 
         </VerticalStackLayout>
     </ScrollView>
